@@ -1,0 +1,29 @@
+# obstacle_range: 3.0  
+# raytrace_range: 4.0
+
+# footprint: [[-0.45, -0.3], [-0.45, 0.3], [0.2, 0.3], [0.2, -0.35]] # Robot Size
+footprint: [[-0.45, -0.3], [-0.45, 0.3], [0.2, 0.3], [0.2, -0.3]]
+
+# inflation_radius: 1.75     # first try
+# cost_scaling_factor: 2.58
+
+# canon 5.9
+# obstacle_range: 5.0
+# raytrace_range: 6.0
+# inflation_radius: 1.75
+# cost_scaling_factor: 7.0
+
+# gaepo
+obstacle_range: 3.0
+raytrace_range: 4.0
+inflation_radius: 1.75
+cost_scaling_factor: 7.0
+
+map_type: costmap
+observation_sources: scan
+scan: {sensor_frame: base_scan, data_type: LaserScan, topic: scan, marking: true, clearing: true}
+
+# canon 04.24
+# obstacle_range: 2.0
+# inflation_radius: 0.4
+# cost_scaling_factor: 10.0
